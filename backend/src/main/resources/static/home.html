@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>RestInn - Bienvenido</title>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/buttons.css" />
+    <link rel="stylesheet" href="css/wrapper.css" />
+    <link rel="stylesheet" href="css/components.css" />
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="button-container-left">
+        <button class="button-left" id="btnReservar">Ver mis reservas</button>
+    </div>
+    <div class="button-container-right">
+        <button class="button-right" id="btnDatos">Ver mis datos</button>
+        <button class="button-right" id="btnCerrar">Cerrar sesión</button>
+    </div>
+</div>
+
+<!-- Aquí insertamos la tabla -->
+<div class="tabla-container">
+    <h2 class="labels">Habitaciones disponibles</h2>
+    <div id="tablaHabitaciones">Cargando habitaciones...</div>
+</div>
+
+<!-- Contenedor para la alerta -->
+<div id="alerta" class="alert">
+    <span class="msg"></span>
+    <button class="close-btn" onclick="cerrarAlerta()">X</button>
+</div>
+
+<script src="js/alertas.js"></script>
+<script src="js/home.js"></script>
+</body>
+</html>
